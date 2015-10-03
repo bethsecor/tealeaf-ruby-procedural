@@ -1,0 +1,12 @@
+# calculator_messages.yml
+
+welcome: "Welcome to the Loan Calculator! Enter your name:"
+invalid_name: "Make sure to end a valid name."
+loan_prompt: "Please enter your loan amount (just a number):"
+invalid_loan: "Make sure to end a valid loan amount."
+apr_prompt: "Enter your Annual Percentage Rate (APR)"
+invalid_apr: "Make sure to end a valid APR (if your APR is 5%, you would enter 5)."
+duration_prompt: "Enter your loan duration in years:"
+invalid_duration: "Make sure to end a valid loan duration."
+another_calc: "Do you want to perform another payment calculation? (Enter Y if so)"
+goodbye: "Thanks for using Loan Calculator!"

@@ -1,0 +1,9 @@
+# calculator_messages.yml
+
+welcome: "Welcome to Calculator! Enter your name:"
+valid_name: "Make sure to end a valid name."
+number_prompt: "Give me a number:"
+invalid_number: "Not a valid number."
+invalid_operation: "Please enter a valid operation \n(add, subtract, multiply or divide):"
+another_calc: "Do you want to perform another calculation? (Enter Y if so)"
+goodbye: "Thanks for using Calculator!"
