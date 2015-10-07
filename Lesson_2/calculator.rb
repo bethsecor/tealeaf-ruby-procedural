@@ -7,7 +7,7 @@ require 'yaml'
 MESSAGES = YAML.load_file('calculator_messages.yml')
 
 def prompt(message)
-  puts "=> #{message}"
+  prompt "=> #{message}"
 end
 
 def valid_number?(number)
@@ -104,7 +104,7 @@ loop do
              number1.to_f / number2.to_f
            end
 
-  puts ""
+  prompt ""
   prompt "The result is #{result}."
   prompt MESSAGES['another_calc']
   answer = gets.chomp

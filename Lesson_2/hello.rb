@@ -1,1 +1,1 @@
-puts "hello world"
+prompt "hello world"

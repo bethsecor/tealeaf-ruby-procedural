@@ -4,7 +4,7 @@ require 'yaml'
 MESSAGES = YAML.load_file('loan_messages.yml')
 
 def prompt(message)
-  puts "=> #{message}"
+  prompt "=> #{message}"
 end
 
 def valid_number?(number)

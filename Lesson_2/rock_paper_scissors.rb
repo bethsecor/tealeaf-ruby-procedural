@@ -1,7 +1,7 @@
 VALID_CHOICES = %w(rock paper scissors)
 
 def prompt(message)
-  puts "=> #{message}"
+  prompt "=> #{message}"
 end
 
 def win?(first, second)
@@ -37,7 +37,7 @@ loop do
 
   computer_choice = VALID_CHOICES.sample
 
-  puts "You chose: #{choice}; The computer chose: #{computer_choice}."
+  prompt "You chose: #{choice}; The computer chose: #{computer_choice}."
 
   display_results(choice, computer_choice)
 

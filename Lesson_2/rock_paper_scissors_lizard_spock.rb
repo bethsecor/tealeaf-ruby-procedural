@@ -2,7 +2,7 @@ VALID_CHOICES = %w(rock paper scissors lizard spock)
 NUMBER_CHOICES = (1..5).to_a
 
 def prompt(message)
-  puts "=> #{message}"
+  prompt "=> #{message}"
 end
 
 def win?(first, second)
@@ -50,9 +50,9 @@ end
 
 def wingame?(players_hash)
   if players_hash[@name] >= 5
-    puts "#{@name}, you won the game!"
+    prompt "#{@name}, you won the game!"
   elsif players_hash["Computer"] >= 5
-    puts "Sorry, the computer won this game."
+    prompt "Sorry, the computer won this game."
   else
   end
 end
@@ -103,11 +103,11 @@ loop do
 
   computer_choice = VALID_CHOICES.sample
 
-  puts "You chose: #{choice_string}; The computer chose: #{computer_choice}."
+  prompt "You chose: #{choice_string}; The computer chose: #{computer_choice}."
 
   display_results(choice_string, computer_choice)
   add_point(choice_string, computer_choice, players)
-  puts "Scores are #{@name}: #{players[@name]} and Computer: #{players["Computer"]}"
+  prompt "Scores are #{@name}: #{players[@name]} and Computer: #{players["Computer"]}"
 
   break if endgame?(players)
 
